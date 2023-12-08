@@ -1,11 +1,7 @@
 console.log(reoveDuplicateChar("abcdefcde"));
 
 function reoveDuplicateChar(str) {
-    str = str.split("");
+    str1 = str.split("");
 
-    str = new Set(str);
-
-    str = [...str].join("");
-
-    return str;
+    return [...new Set(str1)].join("");
 }
